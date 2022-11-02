@@ -34,6 +34,10 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
+import blackMountain from "../assets/blackMountain.svg";
+import crLogo from "../assets/crLogo.svg";
+import chrisLogo from "../assets/chrisLogo.png";
+import adobeChris from "../assets/adobeChris.svg"
 
 export default {
   email,
@@ -69,4 +73,8 @@ export default {
   nb,
   skype,
   spotify,
+  blackMountain,
+  crLogo,
+  chrisLogo,
+  adobeChris
 };
