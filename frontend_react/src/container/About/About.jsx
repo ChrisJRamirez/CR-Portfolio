@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { AppWrap } from "../../wrapper";
 
 import "./About.scss";
-import { UrlFor, client } from "../../client";
+import { urlFor, client } from "../../client";
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -32,7 +32,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={UrlFor(about.imgUrl)} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: 20 }}>
               {about.title}
             </h2>
