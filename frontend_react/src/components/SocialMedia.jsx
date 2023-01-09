@@ -10,12 +10,12 @@ const SocialMedia = () => {
         </a>
       </div>
       <div>
-      <a href="https://www.linkedin.com/in/christopher-j-ramirez/">
+        <a href="https://www.linkedin.com/in/christopher-j-ramirez/">
           <BsLinkedin />
         </a>
       </div>
       <div>
-      <a href="https://twitter.com/ChrisJMRamirez">
+        <a href="https://twitter.com/ChrisJMRamirez">
           <BsTwitter />
         </a>
       </div>
