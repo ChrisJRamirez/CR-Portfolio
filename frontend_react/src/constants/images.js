@@ -39,7 +39,7 @@ import crLogo from "../assets/crLogo.svg";
 import chrisLogo from "../assets/chrisLogo.png";
 import adobeChris from "../assets/adobeChris.svg"
 
-export default {
+const images =  {
   email,
   mobile,
   api,
@@ -78,3 +78,5 @@ export default {
   chrisLogo,
   adobeChris
 };
+
+export default images;
