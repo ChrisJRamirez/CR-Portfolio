@@ -37,7 +37,6 @@ import spotify from '../assets/spotify.png';
 import blackMountain from "../assets/blackMountain.svg";
 import crLogo from "../assets/crLogo.svg";
 import chrisLogo from "../assets/chrisLogo.png";
-import adobeChris from "../assets/adobeChris.svg"
 
 const images =  {
   email,
@@ -76,7 +75,6 @@ const images =  {
   blackMountain,
   crLogo,
   chrisLogo,
-  adobeChris
 };
 
 export default images;
