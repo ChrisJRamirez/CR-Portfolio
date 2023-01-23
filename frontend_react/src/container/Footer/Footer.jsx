@@ -32,7 +32,7 @@ const Footer = () => {
     }, (error) => {
         console.log(error.text);
     });
-    setIsFormSubmitted(false);
+    setIsFormSubmitted(true);
   };
 
  
