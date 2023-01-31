@@ -44,7 +44,7 @@ const Footer = () => {
       <h2 className="head-text">Contact Me!</h2>
 
       <div className="app__footer-cards">
-      <img  className = "app__footer-profile" src={images.profile} />
+      <img  className = "app__footer-profile" src={images.profile} alt="profile-pic" />
         <div className="app__footer-card ">
           
           <img src={images.email} alt="email" />
