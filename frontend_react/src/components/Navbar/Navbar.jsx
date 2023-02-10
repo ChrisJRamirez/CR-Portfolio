@@ -10,7 +10,13 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <a
+          href="https://drive.google.com/file/d/1e3CqZkez6YgWFXCvoWGGgrY5aoM4bGnc/view"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={images.logo} alt="logo" />
+        </a>
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map((item) => (
