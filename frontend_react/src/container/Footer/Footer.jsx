@@ -22,31 +22,38 @@ const Footer = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current,process.env.REACT_APP_PUBLIC_KEY)
-    .then((result) => {
-        console.log(result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     setIsFormSubmitted(true);
   };
-
- 
-
-  
 
   return (
     <form className="form_footer" ref={form} onSubmit={handleSubmit}>
       <h2 className="head-text">Contact Me!</h2>
 
       <div className="app__footer-cards">
-      <img  className = "app__footer-profile" src={images.profile} alt="profile-pic" />
+        <img
+          className="app__footer-profile"
+          src={images.profile}
+          alt="profile-pic"
+        />
         <div className="app__footer-card ">
-          
           <img src={images.email} alt="email" />
           <a href="mailto:ChrisJamesRamirez@gmail.com" className="p-text">
             ChrisJamesRamirez@gmail.com
