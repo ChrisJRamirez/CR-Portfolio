@@ -6,17 +6,80 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import "./Skills.scss";
 
+const experiences = [
+  {
+    year: "2021-2022",
+    works: [
+      {
+        name: "Full Stack Developer",
+        company: "Family Promise",
+        desc: "Contributed to both the frontend and backend codebase of the case management platform for the nonprofit Family Promise.",
+      },
+      {
+        name: "Financial Analyst",
+        company: "Westwood One",
+        desc: "Analyzed company's financial data and provided insights and recommendations to support growth and profitability.",
+      },
+      {
+        name: "Student",
+        company: "Bloom Institute of Technology",
+        desc: "Attended and graduated from BloomTech's Full Stack Web Development program.",
+      },
+    ],
+  },
+  {
+    year: "2019-2020",
+    works: [
+      {
+        name: "Digital Accountant",
+        company: "Westwood One",
+        desc: "Managed payment processes, reconciled accounts, and communicated payment information to partners to maintain strong relationships and ensure timely and accurate financial transactions.",
+      },
+    ],
+  },
+  {
+    year: "2017-2018",
+    works: [
+      {
+        name: "Trading Operations Analyst",
+        company: "UBS",
+        desc: "Responsible for ensuring smooth and efficient trade execution and settlement processes while identifying and mitigating any operational risks associated with trading activities.",
+      },
+    ],
+  },
+  {
+    year: "2016-2017",
+    works: [
+      {
+        name: "Executive Assistant",
+        company: "Barefoot Media",
+        desc: "Researched and discovered new media clients that could benefit from the firm’s consulting services, one of which would go on to become TikTok (fka Musical.ly).",
+      },
+    ],
+  },
+  {
+    year: "2012-2016",
+    works: [
+      {
+        name: "Student",
+        company: "University of Delaware",
+        desc: "Attended and graduated from the University of Delaware with a bachelor of science in accounting and finance.",
+      },
+    ],
+  },
+];
+
 const Skills = () => {
-  const [experiences, setExperiences] = useState([]);
+  // const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "experiences"]';
+    // const query = '*[_type == "experiences"]';
     const skillsQuery = '*[_type == "skills"]';
 
-    client.fetch(query).then((data) => {
-      setExperiences(data);
-    });
+    // client.fetch(query).then((data) => {
+    //   setExperiences(data);
+    // });
 
     client.fetch(skillsQuery).then((data) => {
       setSkills(data);
