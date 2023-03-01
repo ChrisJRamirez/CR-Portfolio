@@ -62,6 +62,7 @@ const Work = () => {
         animate={animateCard}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__work-portfolio"
+        onClick=""
       >
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
@@ -76,7 +77,6 @@ const Work = () => {
                   staggerChildren: 0.5,
                 }}
                 className="app__work-hover app__flex"
-                onClick=""
               >
                 <a href={work.projectLink} target="_blank" rel="noreferrer">
                   <motion.div
