@@ -95,6 +95,9 @@ const Work = () => {
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                     onClick=""
+                    onTouchStart={() => {
+                      setAnimateCard({ y: 100, opacity: 0 });
+                    }}
                   >
                     <AiFillGithub />
                   </motion.div>
