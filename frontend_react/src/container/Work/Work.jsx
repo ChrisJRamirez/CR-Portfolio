@@ -83,6 +83,7 @@ const Work = () => {
                     whileHover={{ scale: [1, 0.9] }}
                     transition={{ duration: 0.25 }}
                     className="app__flex"
+                    onClick=""
                   >
                     <AiFillEye />
                   </motion.div>
@@ -93,6 +94,7 @@ const Work = () => {
                     whileHover={{ scale: [1, 0.9] }}
                     transition={{ duration: 0.25 }}
                     className="app__flex"
+                    onClick=""
                   >
                     <AiFillGithub />
                   </motion.div>
