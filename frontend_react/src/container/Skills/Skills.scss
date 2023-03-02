@@ -23,11 +23,11 @@
 }
 
 .app__skills-list {
-  flex: 1;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 
   margin-right: 5rem;
 
